@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+<h2>Are you here?</h2>
+<script>
+var isAdmin = confirm("Are we there yet?");
+
+alert( "Yay, we finally made it!" );
+</script>
+<p>Let's proceed with some examples</p>
+<h1>Tasks for loops</h1>
+<h2>Print all numbers between -10 and 19</h2>
+<button onclick="myFunction1()">Show</button>
+<p id="demo"></p>
+
+<script>
+function myFunction1(lowEnd, highEnd){
+        var lowEnd = -10;
+        var highEnd = 19;
+        var list = [];
+        for (var i = lowEnd; i <= highEnd; i++) {
+            list.push(i);
+        }
+        document.getElementById("demo").innerHTML = list;
+        }
+
+</script>
+<h2>Print all even numbers between 10 and 40</h2>
+<button onclick="myFunction2()">Show</button>
+<p id="demos"></p>
+<script>
+function myFunction2(lowEnd, highEnd){
+        var lowEnd = 10;
+        var highEnd = 40;
+        var list = [];
+        for(var i = lowEnd; i<=highEnd; i++){
+        	if (i%2==0) {
+        		list.push(i);
+        	}
+        }
+        document.getElementById("demos").innerHTML = list;
+    }
+</script>
+
+<h2>Print all odd numbers between 300 and 333</h2>
+<button onclick="myFunction3()">Show</button>
+<p id="demop"></p>
+<script>
+function myFunction3(lowEnd, highEnd){
+        var lowEnd = 300;
+        var highEnd = 333;
+        var list = [];
+        for(var i = lowEnd; i<=highEnd; i++){
+        	if (i%2!=0) {
+        		list.push(i);
+        	}
+        }
+        document.getElementById("demop").innerHTML = list;
+    }
+</script>
+
+<h2>Print all numbers divisible by 5 AND 3 between 5 and 50</h2>
+<button onclick="myFunction4()">Show</button>
+<p id="demok"></p>
+<script>
+function myFunction4(lowEnd, highEnd){
+        var lowEnd = 5;
+        var highEnd = 50;
+        var list = [];
+        for(var i = lowEnd; i<=highEnd; i++){
+        	if (i%5==0 && i%3==0) {
+        		list.push(i);
+        	}
+        }
+        document.getElementById("demok").innerHTML = list;
+    }
+</script>
+
+<h1>Tasks for while</h1>
+<h2>Print all numbers between -10 and 19</h2>
+<button onclick="myFunction5()">Show</button>
+<p id="demoj"></p>
+
+<script>
+function myFunction5(i, highEnd){
+        var highEnd = 19;
+        var list = [];
+        var i=-10
+        while(i<=highEnd){
+        	list.push(i);
+        	i++;
+        }
+        document.getElementById("demoj").innerHTML = list;
+        }
+
+</script>
+
+<h2>Print all even numbers between 10 and 40</h2>
+<button onclick="myFunction6()">Show</button>
+<p id="demol"></p>
+<script>
+function myFunction6(i, highEnd){
+        var i = 10;
+        var highEnd = 40;
+        var list = [];
+        while(i<=highEnd){
+        	if (i%2==0) {
+             list.push(i);
+         }
+         i++;
+        }
+        document.getElementById("demol").innerHTML = list;
+    }
+</script>
+
+<h2>Print all odd numbers between 300 and 333</h2>
+<button onclick="myFunction7()">Show</button>
+<p id="demoo"></p>
+<script>
+function myFunction7(i, highEnd){
+        var i = 300;
+        var highEnd = 333;
+        var list = [];
+        while(i<=highEnd){
+        	if(i%2!=0){
+        		list.push(i);
+        	}
+        	i++;
+        }
+        document.getElementById("demoo").innerHTML = list;
+    }
+</script>
+
+<h2>Print all numbers divisible by 5 AND 3 between 5 and 50</h2>
+<button onclick="myFunction8()">Show</button>
+<p id="demom"></p>
+<script>
+function myFunction8(i, highEnd){
+        var i = 5;
+        var highEnd = 50;
+        var list = [];
+        while(i<=highEnd){
+        	if(i%5==0 && i%3==0){
+        		list.push(i);
+        	}
+        	i++;
+        }
+        document.getElementById("demom").innerHTML = list;
+    }
+</script>
+</body>
+</html>
